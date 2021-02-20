@@ -11,17 +11,13 @@ defmt-debug = []
 defmt-info = []
 defmt-warn = []
 defmt-error = []
-defmt = [ "dep:defmt", "smoltcp/defmt" ]
 
 [dependencies]
-
 defmt = { version = "0.1.3", optional = true }
 log = { version = "0.4.11", optional = true }
-
 embassy             = { version = "0.1.0" }
-
 managed             = { version = "0.8.0", default-features = false, features = [ "map" ]}
-heapless            = { version = "0.5.6", default-features = false } 
+heapless            = { version = "0.5.6", default-features = false }
 as-slice            = { version = "0.1.4" }
 generic-array       = { version = "0.14.4", default-features = false }
 stable_deref_trait  = { version = "1.2.0", default-features = false }
@@ -29,8 +25,8 @@ futures             = { version = "0.3.5", default-features = false, features = 
 
 [dependencies.smoltcp]
 version = "0.6.0"
-#git = "https://github.com/akiles/smoltcp"
-#rev = "00952e2c5cdf5667a1dfb6142258055f58d3851c"
+# git = "https://github.com/akiles/smoltcp"
+# rev = "00952e2c5cdf5667a1dfb6142258055f58d3851c"
 default-features = false
 features = [
   "medium-ethernet",
